@@ -262,6 +262,20 @@ def _maintain(sub_mode, file_type):
     maintain.route(sub_mode, file_type)
 
 
+@dispatcher.register(MODES.TOKENHELPER)
+@error_handler
+def _token_helper():
+    from .routes import token_helper
+    token_helper.token_helper()
+
+
+@dispatcher.register(MODES.APPLYMANUALTOKEN)
+@error_handler
+def _apply_manual_token():
+    from .routes import token_helper
+    token_helper.apply_manual_token()
+
+
 def run(argv):
     queries = kodi.parse_query(argv[2])
     log_utils.log('Version: |%s| Application Version: %s' % (kodi.get_version(), kodi.get_kodi_version()), log_utils.LOGDEBUG)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.twitch" version="3.0.3" name="Twitch" provider-name="anxdpanic, A Talented Community">
+<addon id="plugin.video.twitch" version="3.0.4-korean-fix.1" name="Twitch (Korean Fix)" provider-name="anxdpanic, Modified by Community">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
         <import addon="script.module.requests" version="2.9.1"/>
@@ -15,14 +15,15 @@
             <fanart>resources/media/fanart.jpg</fanart>
         </assets>
         <news>
-[add] OAuth device-code login with automatic background token refresh
-[add] second device-code login for ad-free playback (Turbo/subscriber)
-[add] website (GQL) search backend with fuzzy/relevance ranking (+ Helix fallback)
-[add] optional "Supported codecs" setting (H.265/HEVC for Enhanced Broadcasting 1440p)
-[fix] search hanging at "Working..." after stopping playback started from search results
-[fix] hide emoji/symbols the skin font cannot render (tofu boxes) in titles and plots
-[upd] InputStream Adaptive: headers via properties, allow up to 1440p, drop sub-720p variants
-[rem] IRC chat integration and the obsolete browser-based token flow
+[Korean Fix v1 - 2026-10-21]
+[add] Manual OAuth Token input field in settings (Login → Manual Login)
+[add] Token Helper script - shows step-by-step guide to extract auth-token from Twitch web
+[add] Apply Manual Token action - instantly use input token without device flow
+[add] Use Twitch Web Client ID toggle (default ON, uses kimne78kx3ncx6brgo4mv6wki5h1ko)
+[add] Auto refresh token toggle
+[add] Korean language strings for new settings
+[fix] Client ID and OAuth token fields exposed in Login tab (not hidden in Developer)
+[fix] Fallback to manual token when device OAuth fails (more reliable for Korean users)
         </news>
         <platform>all</platform>
         <source>https://github.com/anxdpanic/plugin.video.twitch</source>
@@ -53,7 +54,8 @@
         <description lang="es_MX">¡Mira tus transmisiones de videojuegos favoritas!</description>
         <description lang="fi_FI">Katsele suosikkisuoratoistojasi videopeleistä!</description>
         <description lang="fr_FR">Regardez les streams de vos jeux favoris !</description>
-        <description lang="ko_KR">좋아하는 게임 스트림을 시청하세요!</description>
+        <description lang="ko_KR">좋아하는 게임 스트림을 시청하세요! (한국 수정 버전 - OAuth 토큰 직접 입력 지원)</description>
+        <disclaimer lang="ko_KR">비공식 수정 버전. OAuth 로그인 문제를 해결하기 위해 수동 토큰 입력 기능을 추가했습니다.</disclaimer>
         <description lang="nb_NO">Se dine favorittstrømmere!</description>
         <description lang="nl_NL">Bekijk je favoriete gaming-streams!</description>
         <description lang="pl_PL">Oglądaj ulubione programy TwitchTV!</description>

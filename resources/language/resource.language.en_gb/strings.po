@@ -1073,3 +1073,67 @@ msgstr ""
 msgctxt "#30332"
 msgid "Helix API"
 msgstr ""
+
+msgctxt "#30500"
+msgid "Manual Login (Korean Fix)"
+msgstr "Manual Login (Korean Fix)"
+
+msgctxt "#30501"
+msgid "Enter auth-token extracted from Twitch website"
+msgstr "Enter auth-token extracted from Twitch website"
+
+msgctxt "#30502"
+msgid "Manual OAuth Token (auth-token from Twitch website)"
+msgstr "Manual OAuth Token (auth-token from Twitch website)"
+
+msgctxt "#30503"
+msgid "Token Helper (step-by-step guide)"
+msgstr "Token Helper (step-by-step guide)"
+
+msgctxt "#30504"
+msgid "Apply Manual Token (use immediately after save)"
+msgstr "Apply Manual Token (use immediately after save)"
+
+msgctxt "#30505"
+msgid "Manual token takes priority over device login"
+msgstr "Manual token takes priority over device login"
+
+msgctxt "#30506"
+msgid "Use Twitch official web Client ID (kimne78kx...)"
+msgstr "Use Twitch official web Client ID (kimne78kx...)"
+
+msgctxt "#30507"
+msgid "Attempt automatic token refresh"
+msgstr "Attempt automatic token refresh"
+
+msgctxt "#30508"
+msgid "Developer options"
+msgstr "Developer options"
+
+msgctxt "#30509"
+msgid "Enable verbose logging"
+msgstr "Enable verbose logging"
+
+msgctxt "#30510"
+msgid "Twitch Token Helper"
+msgstr "Twitch Token Helper"
+
+msgctxt "#30511"
+msgid "[B]How to extract Twitch auth-token[/B]\n\n1. Open https://twitch.tv in your PC browser and log in\n2. Press F12 to open Developer Tools\n3. Click on Console tab\n4. Paste the following code and press Enter:\n\n   document.cookie.split('; ').find(item=>item.startsWith('auth-token='))?.split('=')[1]\n\n5. Copy the resulting 30-character string\n6. Go to Kodi Twitch addon settings → Manual Login → Manual OAuth Token field\n7. Paste the token and click 'Apply Manual Token'"
+msgstr "[B]How to extract Twitch auth-token[/B]\n\n1. Open https://twitch.tv in your PC browser and log in\n2. Press F12 to open Developer Tools\n3. Click on Console tab\n4. Paste the following code and press Enter:\n\n   document.cookie.split('; ').find(item=>item.startsWith('auth-token='))?.split('=')[1]\n\n5. Copy the resulting 30-character string\n6. Go to Kodi Twitch addon settings → Manual Login → Manual OAuth Token field\n7. Paste the token and click 'Apply Manual Token'"
+
+msgctxt "#30512"
+msgid "Token applied successfully! You can now use Twitch."
+msgstr "Token applied successfully! You can now use Twitch."
+
+msgctxt "#30513"
+msgid "No token entered. Please enter a token in the Manual OAuth Token field first."
+msgstr "No token entered. Please enter a token in the Manual OAuth Token field first."
+
+msgctxt "#30514"
+msgid "Token validation failed. Please check if the token is correct."
+msgstr "Token validation failed. Please check if the token is correct."
+
+msgctxt "#30515"
+msgid "Token is valid! User: %s"
+msgstr "Token is valid! User: %s"

@@ -10,6 +10,22 @@
         <setting label="30138" type="lsep"/>
         <setting label="30227" id="revoke_token" type="action" action="RunPlugin(plugin://$ID/?mode=revoke_token)" option="close"/>
     </category>
+    <!-- Manual Login (Korean Fix - 직접 토큰 입력) -->
+    <category label="30500">
+        <setting label="30501" type="lsep"/>
+        <!-- OAuth Client ID (사용자 직접 입력) -->
+        <setting id="oauth_clientid" type="text" label="30097" default=""/>
+        <setting id="oauth_redirecturi" type="text" label="30142" default="" visible="false"/>
+        <!-- 수동 OAuth Token (Twitch 웹사이트 auth-token) -->
+        <setting id="manual_oauth_token" type="text" label="30502" default=""/>
+        <setting label="30503" id="token_helper" type="action" action="RunScript(plugin://$ID/?mode=token_helper)" option="close"/>
+        <setting label="30504" id="apply_manual_token" type="action" action="RunPlugin(plugin://$ID/?mode=apply_manual_token)" option="close"/>
+        <setting label="30138" type="lsep"/>
+        <setting label="30505" type="lsep"/>
+        <!-- Quick Settings -->
+        <setting id="use_twitch_web_clientid" type="bool" label="30506" default="true"/>
+        <setting id="auto_refresh_token" type="bool" label="30507" default="true"/>
+    </category>
     <!-- Main Menu -->
     <category label="30219">
         <setting label="30009" id="menu_browse_live" type="bool" default="true"/>
@@ -103,8 +119,7 @@
     </category>
     <!-- Developer -->
     <category label="30118">
-        <!-- OAuth Client ID -->
-        <setting id="oauth_clientid" type="text" label="30097" default=""/>
-        <setting id="oauth_redirecturi" type="text" label="30142" default=""/>
+        <setting label="30508" type="lsep"/>
+        <setting id="dev_log_enabled" type="bool" label="30509" default="false"/>
     </category>
 </settings>
