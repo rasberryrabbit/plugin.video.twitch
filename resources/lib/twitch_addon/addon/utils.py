@@ -181,18 +181,12 @@ def clear_client_id():
 def get_oauth_token(token_only=True, required=False):
     oauth_token = _read_oauth_store().get('access', '')
     if not oauth_token or not oauth_token.strip():
-        # Korean Fix: check manual_oauth_token first, then legacy oauth_token_helix
-        manual_token = kodi.get_setting('manual_oauth_token') or ''
-        manual_token = manual_token.strip()
-        if manual_token:
-            oauth_token = manual_token
-        else:
-            oauth_token = kodi.get_setting('oauth_token_helix')  # legacy fallback (manual entry)
+        oauth_token = kodi.get_setting('oauth_token_helix')  # legacy fallback (manual entry)
     if not oauth_token or not oauth_token.strip():
         if not required: return ''
         kodi.notify(kodi.get_name(), i18n('token_required'), sound=False)
         kodi.show_settings()
-        oauth_token = _read_oauth_store().get('access', '') or (kodi.get_setting('manual_oauth_token') or '').strip() or kodi.get_setting('oauth_token_helix')
+        oauth_token = _read_oauth_store().get('access', '') or kodi.get_setting('oauth_token_helix')
     oauth_token = oauth_token.strip()
     if oauth_token:
         if token_only:

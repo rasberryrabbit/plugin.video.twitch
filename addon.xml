@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.twitch" version="3.0.4-korean-fix.1" name="Twitch (Korean Fix)" provider-name="anxdpanic, Modified by Community">
+<addon id="plugin.video.twitch" version="3.0.4-korean-fix.4" name="Twitch (Korean Fix)" provider-name="anxdpanic, Modified by Community">
     <requires>
-        <import addon="xbmc.python" version="3.0.1"/>
-        <import addon="script.module.requests" version="2.9.1"/>
-        <import addon="script.module.python.twitch" version="3.0.2"/>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" version="2.22.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="resources/lib/addon_runner.py">
         <provides>video</provides>
@@ -15,13 +14,24 @@
             <fanart>resources/media/fanart.jpg</fanart>
         </assets>
         <news>
+[Korean Fix v4 - 2026-10-23]
+[rem] 수동 로그인 기능 제거 - 디바이스 로그인 방식만 유지
+[rem] token_helper, apply_manual_token 라우트 제거
+[rem] manual_oauth_token 설정 필드 제거
+[rem] TOKENHELPER, APPLYMANUALTOKEN 모드 제거
+[mod] settings.xml Developer 탭 원래대로 복원
+
+[Korean Fix v3 - 2026-10-23]
+[fix] script.module.python.twitch 의존성 제거 - 모듈을 애드온 내부에 번들
+[fix] 이제 별도 모듈 설치 없이 단일 zip으로 설치 가능
+[fix] 종속성 오류 완전 해결
+
+[Korean Fix v2 - 2026-10-23]
+[fix] 종속성 버전 수정 - Kodi 19 Matrix 호환성 개선
+[fix] xbmc.python 3.0.0으로 낮춤 (Kodi 19+ 호환)
+[fix] script.module.requests 2.22.0으로 낮춤 (Kodi 19 기본 버전)
+
 [Korean Fix v1 - 2026-10-21]
-[add] Manual OAuth Token input field in settings (Login → Manual Login)
-[add] Token Helper script - shows step-by-step guide to extract auth-token from Twitch web
-[add] Apply Manual Token action - instantly use input token without device flow
-[add] Use Twitch Web Client ID toggle (default ON, uses kimne78kx3ncx6brgo4mv6wki5h1ko)
-[add] Auto refresh token toggle
-[add] Korean language strings for new settings
 [fix] Client ID and OAuth token fields exposed in Login tab (not hidden in Developer)
 [fix] Fallback to manual token when device OAuth fails (more reliable for Korean users)
         </news>

@@ -56,9 +56,7 @@ MODES = __enum(
     LISTSEARCH='list_search',
     CLEARSEARCHHISTORY='clear_search_history',
     REMOVESEARCHHISTORY='remove_search_history',
-    MAINTAIN='maintain',
-    TOKENHELPER='token_helper',
-    APPLYMANUALTOKEN='apply_manual_token'
+    MAINTAIN='maintain'
 )
 
 LINE_LENGTH = 60
