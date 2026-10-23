@@ -1,16 +1,5 @@
-3.0.4-korean-fix.1 (2026-10-21) - Korean Fix Edition
-[add] Manual OAuth Token input field in settings (Login -> Manual Login tab)
-[add] Token Helper script - shows step-by-step guide to extract auth-token from Twitch website
-[add] Apply Manual Token action - validates and applies input token immediately
-[add] Use Twitch Web Client ID toggle (default ON, uses kimne78kx3ncx6brgo4mv6wki5h1ko)
-[add] Auto refresh token toggle
-[add] Korean language strings for new settings (30500-30515)
-[add] README_KOREAN_FIX.md with installation guide
-[fix] Client ID and OAuth token fields exposed in Login tab (not hidden in Developer)
-[fix] get_oauth_token() now checks manual_oauth_token setting as fallback when device OAuth fails
-[fix] More reliable authentication for Korean users where device OAuth may fail
-[mod] addon.xml version bumped to 3.0.4-korean-fix.1
-[mod] Disclaimer added for Korean language
+3.0.4-kodi-19.5 (2026-10-21) - Kodi 19.5
+[Add] Usable under kodi 19.5
 
 3.0.3
 [add] OAuth device-code login with automatic background token refresh (Settings -> "Login (device code)")
