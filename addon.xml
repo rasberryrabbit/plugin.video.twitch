@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.twitch" version="3.0.4-korean-fix.4" name="Twitch (Korean Fix)" provider-name="anxdpanic, Modified by Community">
+<addon id="plugin.video.twitch" version="3.0.3-Matrix" name="Twitch (Korean Fix)" provider-name="anxdpanic, Modified by Community">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
         <import addon="script.module.requests" version="2.22.0"/>
@@ -14,26 +14,14 @@
             <fanart>resources/media/fanart.jpg</fanart>
         </assets>
         <news>
-[Korean Fix v4 - 2026-10-23]
+[3.0.3-Matrix - 2026-10-23 Korean Fix Edition]
+[mod] 버전 표기를 3.0.3-Matrix로 변경 (Kodi 19 Matrix 호환 표시)
 [rem] 수동 로그인 기능 제거 - 디바이스 로그인 방식만 유지
-[rem] token_helper, apply_manual_token 라우트 제거
-[rem] manual_oauth_token 설정 필드 제거
-[rem] TOKENHELPER, APPLYMANUALTOKEN 모드 제거
-[mod] settings.xml Developer 탭 원래대로 복원
-
-[Korean Fix v3 - 2026-10-23]
 [fix] script.module.python.twitch 의존성 제거 - 모듈을 애드온 내부에 번들
 [fix] 이제 별도 모듈 설치 없이 단일 zip으로 설치 가능
-[fix] 종속성 오류 완전 해결
-
-[Korean Fix v2 - 2026-10-23]
 [fix] 종속성 버전 수정 - Kodi 19 Matrix 호환성 개선
-[fix] xbmc.python 3.0.0으로 낮춤 (Kodi 19+ 호환)
-[fix] script.module.requests 2.22.0으로 낮춤 (Kodi 19 기본 버전)
-
-[Korean Fix v1 - 2026-10-21]
-[fix] Client ID and OAuth token fields exposed in Login tab (not hidden in Developer)
-[fix] Fallback to manual token when device OAuth fails (more reliable for Korean users)
+[fix] xbmc.python 3.0.0, script.module.requests 2.22.0
+[fix] Client ID and OAuth token fields exposed in Login tab
         </news>
         <platform>all</platform>
         <source>https://github.com/anxdpanic/plugin.video.twitch</source>

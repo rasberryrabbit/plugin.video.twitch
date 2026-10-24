@@ -1,5 +1,10 @@
-3.0.4-kodi-19.5 (2026-10-21) - Kodi 19.5
-[Add] Usable under kodi 19.5
+3.0.3-Matrix (2026-10-23) - Kodi 19
+[mod] 버전 표기를 3.0.3-Matrix로 변경 (Kodi 19 Matrix 호환 표시)
+[fix] script.module.python.twitch 의존성 제거 - 모듈을 애드온 내부에 번들
+[fix] 이제 별도 모듈 설치 없이 단일 zip으로 설치 가능
+[fix] 종속성 버전 수정 - Kodi 19 Matrix 호환성 개선
+[fix] xbmc.python 3.0.0으로 낮춤 (Kodi 19+ 호환)
+[fix] script.module.requests 2.22.0으로 낮춤 (Kodi 19 기본 버전)
 
 3.0.3
 [add] OAuth device-code login with automatic background token refresh (Settings -> "Login (device code)")
